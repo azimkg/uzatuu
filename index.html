@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Кыз узатуу - Мээрим</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+                'pacif': ['Pacifico', 'cursive'],
+                'rub': ['Rubik', 'sans-serif']
+                
+            },
+      }
+    }
+  </script>
+</head>
+<body>
+    <header class="bg-img relative z-10 w-full h-screen">
+        <div class="container relative h-full flex items-center justify-center">
+                <img src="./images/kolso.png" class="logo absolute top-4 left-0" alt="logo">
+                <img src="./images/uzor.png" class="w-40 sm:w-48 md:w-64 lg:w-80 absolute bottom-4 left-0 rotate-180" alt="logo">
+                <img src="./images/uzor.png" class="w-48 sm:w-48 md:w-64 lg:w-80 absolute top-4 right-0" alt="logo">
+                <img src="./images/she.png" class="she absolute bottom-4 right-0 sm:right-10" alt="logo">
+            <div class="relative flex items-center flex-col">
+                <div class="absolute -bottom-20 rounded-full py-3 pl-3.5 pr-2.5 border border-2 border-[#FEB996]">
+                    <svg id="playButton" class="w-6 text-[#562a1e] cursor-pointer" viewBox="-3 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-419.000000, -571.000000)" fill="currentColor">
+                                <path d="M440.415,583.554 L421.418,571.311 C420.291,570.704 419,570.767 419,572.946 L419,597.054 C419,599.046 420.385,599.36 421.418,598.689 L440.415,586.446 C441.197,585.647 441.197,584.353 440.415,583.554" id="play" sketch:type="MSShapeGroup">
+                    </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="main hidden absolute -bottom-28 cursor-pointer" id="pauseButton">
+                    <audio id="audio" controls style="display: none;">
+                        <source src="song.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="mainSpan"></span> 
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                    <span class="mainSpan"></span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl lg:text-7xl font-pacif text-center text-main">Кыз узатуу</h2>
+                <h2 class="text-4xl sm:text-5xl lg:text-7xl font-pacif text-center text-main mt-10">Мээрим</h2>
+            </div>
+            <img src="./images/down.svg" class="w-6 absolute bg-none bottom-4 animated-element" alt="">
+        </div>
+    </header>
+    <section class="container">
+        <div class="py-10 pb-10 md:pb-12 relative">
+            <h2 class="font-pacif text-[#A08559] text-3xl text-center" style="letter-spacing: 1px">
+                Сиз чакырылдыңыз!
+            </h2>
+            <p class="font-pacif text-black/70 text-2xl text-center mt-4 mx-0 md:mx-28" style="letter-spacing: 1px;">Урматту коноктор! Сиздерди ажарлуу кызыбыз Мээримдин кыз узатуу тоюна арналган салтанатка келип, сыйлуу коногубуз болуп кетүүгө чакырабыз!</p>
+            <div class="flex flex-col items-end justify-center mx-8 md:mx-28 mt-8 md:mt-4">
+                <h3 class="text-[#A08559] font-pacif text-lg mr-10">Той ээлери:</h3>
+                <p class="font-pacif text-black/70">
+                    Тайэнеси Турумкан
+                    <br>
+                    Апасы Рахат
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center flex-col gap-10 md:gap-0 md:flex-row justify-around py-10">
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-32 h-32 rounded-full overflow-hidden" style="background-image: url(./images/loc.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                </div>
+                <h2 class="text-[#A08559] font-rub text-xl">Дарегибиз</h2>
+                <p class="text-lg font-rub">Оргочор айылы, Токтогул к., 27</p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-32 h-32 rounded-full overflow-hidden" style="background-image: url(./images/date.jpg); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                </div>
+                <h2 class="text-[#A08559] font-rub text-xl">Той салтанаты</h2>
+                <p class="text-lg font-rub">8 октябрь 2023</p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-32 h-32 rounded-full overflow-hidden" style="background-image: url(./images/time.jpg); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                </div>
+                <h2 class="text-[#A08559] font-rub text-xl">Той башталуучу убакыт</h2>
+                <p class="text-lg font-rub">12:00</p>
+            </div>
+        </div>
+        <h2 class="font-rub text-[#A08559] text-xl font-bold text-center mt-10">Тойго чейин</h2>
+        <div class="flex items-center justify-center gap-4 mb-10 mt-2">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 md:w-24 py-4 border flex justify-center border-[#A08559] rounded-2xl">
+                        <span id="days" class="font-rub text-2xl text-[#A08559] font-bold">00</span>
+                    </div>
+                    <p class="font-rub text-black/70">Күн</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 md:w-24 py-4 border flex justify-center border-[#A08559] rounded-2xl">
+                        <span id="hours" class="font-rub text-2xl text-[#A08559] font-bold">00</span>
+                    </div>
+                    <p class="font-rub text-black/70">Саат</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 md:w-24 py-4 border flex justify-center border-[#A08559] rounded-2xl">
+                        <span id="minutes" class="font-rub text-2xl text-[#A08559] font-bold">00</span>
+                    </div>
+                    <p class="font-rub text-black/70">Мүнөт</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 md:w-24 py-4 border flex justify-center border-[#A08559] rounded-2xl">
+                        <span id="seconds" class="font-rub text-2xl text-[#A08559] font-bold">00</span>
+                    </div>
+                    <p class="font-rub text-black/70">Секунда</p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <div class="relative h-32 md:h-80 flex items-start md:items-center justify-center">
+            <p class="text-2xl sm:text-3xl font-pacif text-[#A08559] relative z-10">Сизди тойдон күтөбүз!</p>
+            <img src="./images/i.webp" class="w-32 sm:w-48 md:w-64 lg:w-80 absolute bottom-4 left-0 rotate-180" alt="logo">
+            <img src="./images/i.webp" class="w-32 sm:w-48 md:w-64 lg:w-80 absolute bottom-4 right-0 rotate-90" alt="logo">
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
