@@ -1,17 +1,22 @@
 const audio = document.getElementById("audio");
 const playButton = document.getElementById("playButton");
 const pauseButton = document.getElementById("pauseButton");
+const relax = document.getElementById("relax");
+
 
 playButton.addEventListener("click", function () {
     audio.play();
     pauseButton.classList.remove("hidden")
     playButton.classList.add("hidden")
+    relax.classList.remove("hidden")
 });
 
 pauseButton.addEventListener("click", function () {
     audio.pause();
     playButton.classList.remove("hidden")
     pauseButton.classList.add("hidden")
+    relax.classList.add("hidden")
+
 });
 
 function calculateTimeLeft() {
